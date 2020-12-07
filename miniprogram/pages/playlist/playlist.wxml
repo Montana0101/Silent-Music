@@ -1,0 +1,15 @@
+<!-- interval/切换时间  duration/滑动时间-->
+<swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+  <block wx:for="{{bannerArr}}" wx:key="_id">
+    <swiper-item>
+      <!-- mode-scaleToFill/缩放后填满  aspectFit/缩放保持宽高比 widthFix/宽度不变高度自动变化-->
+      <image src="{{item.imageUrl}}" mode="widthFix" class="img"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="playlist-layout">
+   <block  wx:for="{{playList}}" wx:key="index" wx:for-item="item">
+       <m-playlist list="{{item}}"></m-playlist>
+   </block>
+</view>

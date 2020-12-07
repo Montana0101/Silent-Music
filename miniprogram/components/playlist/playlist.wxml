@@ -1,0 +1,10 @@
+<view class="playlist-view">
+  <view class="playlist-img-layout" bindtap="_getMusicList" data-playlistid="{{list.id}}">
+    <image src="{{list.coverImgUrl}}" class="playlist-img"></image>
+    <view class="playlist-number">
+      <image src="/images/music.svg" class="playlist-number-svg"></image>
+      <text class="playlist-number-text">{{count}}</text>
+    </view>
+  </view>
+  <view class="playlist-describe">{{list.name}}</view>
+</view>

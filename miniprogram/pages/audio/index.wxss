@@ -1,0 +1,103 @@
+/* 遮罩布局 */
+
+.mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(97, 90, 90, 0.7);
+  z-index: -2;
+  display: flex;
+  flex-direction: column;
+}
+
+.bgPic {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* z-index: 999; */
+  filter: blur(60rpx);
+}
+
+/* 唱片转动 */
+.circle-rotate {
+  position: absolute;
+  top: 100rpx;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(black, rgba(255, 255, 255, 0.7));
+  width: 500rpx;
+  height: 500rpx;
+  border-radius: 250rpx;
+  animation: func 30s linear 0s infinite;
+  /* border:1px solid white; */
+  /* -webkit-animation:func 5s infinite; */
+}
+
+@keyframes func {
+  0% {
+    rotate: 0deg;
+    /* background:linear-gradient(black,white); */
+  }
+
+  50% {
+    rotate: 180deg;
+    /* background:linear-gradient(white,rgb(87, 84, 84)); */
+  }
+
+  100% {
+    rotate: 360deg;
+    /* background:linear-gradient(black,white); */
+  }
+}
+
+.circlePic {
+  z-index: 888;
+  height: 400rpx;
+  width: 400rpx;
+  border-radius: 200rpx;
+  background-repeat: no-repeat;
+  /* background-position: 100% 100%; */
+  /* background-position: center; */
+  background-size: 100%;
+}
+
+/* 字体区域 */
+.actionArea{
+  display: flex;
+  /* background-color: red; */
+  position: absolute;
+  bottom: 200rpx;
+  right:0;
+  left:0;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50rpx;
+}
+
+.iconfont {
+ color: white;
+ font-size: 80rpx;
+}
+
+.centerIcon{
+ margin:0 50rpx;
+ font-size:100rpx
+}
+
+/* 进度条区域 */
+.progress{
+  width: 90%;
+  margin:0 auto;
+  /* background:white; */
+  z-index: 999;
+  position: absolute;
+  bottom: 350rpx;
+  right:0;
+  left:0;
+}

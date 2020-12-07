@@ -1,0 +1,13 @@
+<!--components/progress-bar/index.wxml-->
+<view class="container">
+   <view class="left-time time">{{currentTime}}</view>
+   
+   <view class="movable-layout">
+    <!-- <movable-area class="movable-area">
+    <movable-view class="movable-view" direction="horizontal" damping="1000">
+    </movable-view>
+   </movable-area> -->
+  <progress class="progress" stroke-width="4" backgroundColor="rgba(200,200,200,1)" activeColor="rgba(255,255,255,1)" percent="{{pert}}"></progress>
+   </view>
+   <view class="right-time time">{{totalTime}}</view>
+</view>

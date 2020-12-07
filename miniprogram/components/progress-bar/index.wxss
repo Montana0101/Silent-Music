@@ -1,0 +1,41 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  /* background:yellow; */
+  color:white;
+  align-items: center;
+}
+
+.movable-layout{
+   flex:1;
+  position: relative;
+}
+
+.movable-area{
+  position: absolute;
+  width: 100%;
+  /* background:white; */
+  height:34rpx;
+  left:0rpx;
+  right:0rpx;
+  bottom:-14rpx;
+    z-index: 99999;
+}
+
+.movable-view{
+  background:white;
+  width: 36rpx;
+  height:36rpx;
+  border-radius: 50%;
+  z-index: 99999;
+}
+
+/* 时间样式 */
+.left-time{
+  font-size: 30rpx;
+  margin-right:10rpx;
+}
+.right-time{
+  font-size: 30rpx;
+  margin-left:10rpx;
+}

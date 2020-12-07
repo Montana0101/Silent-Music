@@ -1,0 +1,84 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": true,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "appid": "wxb09c5513a57689e5",
+  "projectname": "music_ware",
+  "libVersion": "2.14.0",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/playlist/playlist",
+          "pathName": "pages/playlist/playlist",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/musiclist/index",
+          "pathName": "pages/musiclist/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/musiclist/index",
+          "pathName": "pages/musiclist/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/musiclist/index",
+          "pathName": "pages/musiclist/index",
+          "query": "playlistId=2554937137",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

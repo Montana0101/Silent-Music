@@ -1,0 +1,45 @@
+.playlist-view{
+  width: 220rpx;
+  margin-bottom: 32rpx;
+}
+
+.playlist-img-layout{
+  width: 100%;
+  height:170rpx;
+  position: relative;
+}
+
+.playlist-img{
+  width: 100%;
+  height: 100%;
+}
+
+.playlist-number{
+  position: absolute;
+  top:10rpx;
+  right:10rpx;
+  display: flex;
+  align-items: center;
+}
+
+.playlist-number-svg{
+  color:white;
+  width: 20rpx;
+  height: 20rpx;
+  margin-right: 5rpx;
+}
+
+.playlist-number-text{
+  color:white;
+  font-size: 20rpx;
+}
+
+.playlist-describe{
+  font-size: 24rpx;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,98 @@
+.musiclist-layout{
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+}
+
+.musiclist-relative{
+  position: relative;
+  height:340rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.musiclist-cover{
+  height:340rpx;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: blur(40rpx);
+  opacity: 0.4;
+  position: absolute;
+}
+
+/* 遮罩 */
+.musiclist-mask{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #333;
+  z-index: -1;
+}
+
+/* 封面图片 */
+.musiclist-image{
+  height:86%;
+  width: 300rpx;
+  z-index: 999;
+  /* margin-left: 20rpx; */
+}
+
+/* 封面标题 */
+.musiclist-font{
+   color: white;
+   font-weight: bold;
+   width: 400rpx ;
+   font-size: 36rpx;
+   text-indent: 20rpx;
+}
+
+/* 每一首歌 */
+.musiclist-item{
+  background-color: white;
+  min-height: 130rpx;
+  display: flex;
+}
+
+.musiclist-item-checked{
+  background-color: white;
+  min-height: 130rpx;
+  display: flex;
+  color:red 
+}
+
+.musiclist-item-no{
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+  font-size: 32rpx;
+}
+
+.musiclist-item-main{
+  flex:7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* padding-left: 30rpx; */
+  padding: 12rpx;
+}
+
+.musiclist-item-title{
+  font-size: 32rpx;
+ font-weight: bold;
+}
+
+.musiclist-item-name{
+  font-size: 26rpx;
+  color: rgba(0,0,0,0.6);
+}
+
+.musiclist-item-name-checked{
+  font-size: 26rpx;
+  color:red
+}

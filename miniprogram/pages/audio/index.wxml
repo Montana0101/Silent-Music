@@ -1,0 +1,22 @@
+<!-- 播放页面 -->
+
+
+<view class="mask">
+  <view class="bgPic" style="background:url({{cutMusic.al.picUrl}})">
+  </view>
+
+  <view class="circle-rotate" style="animation-play-state:{{flag ? 'paused' : ''}};-webkit-animation-play-state:{{flag ? 'paused' : ''}}">
+     <view class="circlePic" style="background-image:url({{cutMusic.al.picUrl}})">
+     </view>
+  </view>
+
+  <view class="progress">
+   <progress-bar  id="progress"></progress-bar>
+  </view>
+
+  <view class="actionArea">
+    <view class="iconfont icon-shangyishoushangyige" bindtap="toPrev"></view>
+    <view class="iconfont centerIcon {{!flag ? 'icon-zanting' : 'icon-bofang'}}" bindtap="playOrPause"></view>
+    <view class="iconfont icon-xiayigexiayishou" bindtap="toNext"></view>
+  </view>
+</view>

@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/playlist/playlist",
+    "pages/blog/blog",
+    "pages/profile/profile",
+    "pages/musiclist/index",
+    "pages/audio/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d43c33",
+    "navigationBarTitleText": "沉默之音",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#474747",
+    "selectedColor": "#d43d43",
+    "list": [
+      {
+        "pagePath": "pages/playlist/playlist",
+        "text": "音乐",
+        "iconPath": "images/music_.png",
+        "selectedIconPath": "images/music.png"
+      },
+      {
+        "pagePath": "pages/playlist/playlist",
+        "text": "发现",
+        "iconPath": "images/find_.png",
+        "selectedIconPath": "images/find.png"
+      },
+      {
+        "pagePath": "pages/playlist/playlist",
+        "text": "我的",
+        "iconPath": "images/profile_.png",
+        "selectedIconPath": "images/profile.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "requiredBackgroundModes":["audio"]
+}
