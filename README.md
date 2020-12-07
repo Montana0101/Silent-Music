@@ -1,5 +1,5 @@
 ## Serverless 
-- [资源库] (https://github.com/Binaryify/NeteaseCloudMusicApi)
+- [资源库](https://github.com/Binaryify/NeteaseCloudMusicApi)
 - [云托管] 
 - [云开发]
 - [后台系统]
