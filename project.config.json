@@ -77,6 +77,29 @@
           "pathName": "pages/musiclist/index",
           "query": "playlistId=2554937137",
           "scene": null
+        },
+        {
+          "name": "pages/discover/discover",
+          "pathName": "pages/discover/discover",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/userInfo/index",
+          "pathName": "pages/userInfo/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/musiclist/index",
+          "pathName": "pages/musiclist/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/playlist/playlist",
+          "pathName": "pages/playlist/playlist",
+          "scene": null
         }
       ]
     }

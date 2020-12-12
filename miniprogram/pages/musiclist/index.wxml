@@ -11,13 +11,7 @@
   </view>
 
   <block wx:for="{{musiclist}}" wx:key="id">
-    <view class="{{currentId == item.id ? 'musiclist-item-checked' : 'musiclist-item ' }}" bindtap="_selectMusic" data-musicId="{{item.id}}" data-index="{{index}}" data-musicName="{{item.name}}">
-      <view class="musiclist-item-no">{{index+1}}</view>
-      <view class="musiclist-item-main">
-        <view class="musiclist-item-title">{{item.name}}</view>
-        <view class=" {{currentId == item.id ? 'musiclist-item-name-checked' : 'musiclist-item-name'}}">{{item.ar[0].name}} - {{item.al.name}}</view>
-      </view>
-    </view>
+    <m-musiclist cutObj="{{item}}" index="{{index}}" action="play"></m-musiclist>
 </block>
 
 </view>

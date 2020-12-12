@@ -61,7 +61,6 @@ Page({
   onReachBottom: function () {
     // 开关开着代表还有数据没拉
     this._testInterface()
-    console.log("到底啦 到底啦")
     if (this.data.flag) {
       this.setData({
         start: this.data.start + 1
@@ -89,7 +88,6 @@ Page({
     this.setData({
       bannerArr:response.result.data
     })
-    console.log("banner",response.result.data)
   },
 
   // 获取歌单列表
@@ -107,8 +105,7 @@ Page({
         flag: true,
         playList: this.data.playList.concat(musicData.result.data)
       })
-      // console.log("获取歌单列表",musicData.result.data)
-      // console.log("当前歌单列表为第", this.data.start + 1, "页数据，列表：", this.data.playList)
+
     } else {
       this.setData({
         flag: false

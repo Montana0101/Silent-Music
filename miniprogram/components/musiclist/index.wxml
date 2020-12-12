@@ -1,0 +1,9 @@
+<view class="{{currentId == cutObj.id ? 'musiclist-item-checked' : 'musiclist-item ' }}" bindtap="_selectMusic"
+  data-musicId="{{cutObj.id}}" data-index="{{index}}" data-detail="{{cutObj}}">
+  <view class="musiclist-item-no">{{index+1}}</view>
+  <view class="musiclist-item-main">
+    <view class="musiclist-item-title">{{cutObj.name}}</view>
+    <view class=" {{currentId == cutObj.id ? 'musiclist-item-name-checked' : 'musiclist-item-name'}}">
+      {{cutObj.ar[0].name}} - {{cutObj.al.name}}</view>
+  </view>
+</view>

@@ -35,24 +35,20 @@
   height: 500rpx;
   border-radius: 250rpx;
   animation: func 30s linear 0s infinite;
-  /* border:1px solid white; */
-  /* -webkit-animation:func 5s infinite; */
+  -webkit-animation:func 30s linear 0s infinite;
 }
 
 @keyframes func {
   0% {
-    rotate: 0deg;
-    /* background:linear-gradient(black,white); */
+   transform:rotate(0deg)
   }
 
   50% {
-    rotate: 180deg;
-    /* background:linear-gradient(white,rgb(87, 84, 84)); */
+    transform:rotate(180deg)
   }
 
   100% {
-    rotate: 360deg;
-    /* background:linear-gradient(black,white); */
+    transform:rotate(360deg)
   }
 }
 

@@ -1,0 +1,39 @@
+<view class="container">
+  <view class="info">
+    <view class="info-photo">
+      <open-data type="userAvatarUrl" />
+    </view>
+
+    <view class="info-name">
+      <open-data type="userNickName" class="userName" />
+    </view>
+  </view>
+  <view class="area">
+    <view class="list">
+      <view bindtap="toHistory">
+        <view class="item-text">
+          <view class="iconfont iconheijiao" style="color:#99D4E6"></view>
+          <view>播放历史</view>
+        </view>
+        <view class="iconfont iconjiantou"></view>
+      </view>
+
+      <view>
+        <view class="item-text">
+          <view class="iconfont iconjianzhu" style="color:#49AB75"></view>
+          <view>小程序码</view>
+        </view>
+        <view class="iconfont iconjiantou"></view>
+      </view>
+
+      <view>
+        <view class="item-text">
+          <view class="iconfont iconyouxi" style="color:#E77A6B"></view>
+          <view>让我想想</view>
+        </view>
+        <view class="iconfont iconjiantou"></view>
+      </view>
+
+    </view>
+  </view>
+</view>

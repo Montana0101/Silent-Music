@@ -15,8 +15,8 @@
   </view>
 
   <view class="actionArea">
-    <view class="iconfont icon-shangyishoushangyige" bindtap="toPrev"></view>
-    <view class="iconfont centerIcon {{!flag ? 'icon-zanting' : 'icon-bofang'}}" bindtap="playOrPause"></view>
-    <view class="iconfont icon-xiayigexiayishou" bindtap="toNext"></view>
+    <view class="iconfont iconshangyishou" bindtap="toPrev"></view>
+    <view class="iconfont centerIcon {{!flag ? 'iconzanting' : 'iconbofang'}}" bindtap="playOrPause"></view>
+    <view class="iconfont iconxiayishou" bindtap="toNext"></view>
   </view>
 </view>

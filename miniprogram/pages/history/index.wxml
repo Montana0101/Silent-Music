@@ -1,0 +1,5 @@
+<view class="history-layout">
+   <block wx:for="{{list}}" wx:key="index" wx:for-item="item">
+    <m-musiclist cutObj="{{item}}" index="{{index}}" action="history"></m-musiclist>
+   </block>
+</view>

@@ -1,19 +1,31 @@
-// pages/profile/profile.js
+// miniprogram/pages/history/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+      list:[], // 获取历史数据
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+       wx.getStorage({
+         key: 'historyList',
+       }).then(res=>{
+         this.setData({
+           list:JSON.parse(res.data).reverse()
+         },()=>{
+          // console.log("获取Storage历史数据",JSON.parse(res.data))
+         })
+       }).catch(err=>{
+         console.warn("获取Storage历史数据失败",err)
+       })
   },
+
+  
 
   /**
    * 生命周期函数--监听页面初次渲染完成

@@ -1,0 +1,66 @@
+.container{
+  position: absolute;
+  top:0;
+  right:0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.info{
+  width: 100%;
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://dss2.bdstatic.com/8_V1bjqh_Q23odCf/pacific/1889564508.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info-photo{
+  height:200rpx;
+  width: 200rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.area{
+  flex:1.2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.list{
+  background:white;
+  width:100%;
+  height:300rpx;
+  margin: 50rpx 35rpx;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30rpx;
+}
+
+.list>view{
+  display: flex;
+  padding:0 50rpx;
+  justify-content: space-between;
+  align-items: center;
+  flex:1;
+  border-bottom:5rpx solid #F6F6F6;
+  font-size:32rpx;
+}
+
+.item-text{
+   display: flex;
+   align-items: center;
+   /* background:red; */
+   height:100%;
+}
+
+.item-text>.iconfont{
+ margin-right: 20rpx;
+}

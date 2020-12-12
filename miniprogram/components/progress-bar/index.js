@@ -27,6 +27,8 @@ Component({
 
       // 获取事件流
       this._getAudioEvent()
+
+
     }
   },
   /**
@@ -39,14 +41,12 @@ Component({
       if (typeof totalTime == "undefined") {
         setTimeout(() => {
           let timer = this._parseTime(wx.getBackgroundAudioManager().duration)
-          // console.log("获取timer111",timer)
           this.setData({
             totalTime: timer
           })
-        }, 1500)
+        }, 2000)
       } else {
         let timer = this._parseTime(totalTime)
-        // console.log("获取timer222",timer)
         this.setData({
           totalTime: timer
         })
@@ -64,18 +64,20 @@ Component({
 
     // 获取进度条宽度
     _getProgressWidth() {
-      let query = this.createSelectorQuery()
+      // let query = this.createSelectorQuery()
       // 获取不同机型进度条宽度
-      query.select(".movable-area").boundingClientRect()
-      query.select(".movable-view").boundingClientRect()
-      query.exec(item => {
-        this.setData({
-          progressAreaWidth: item[0].width,
-          progressViewWidth: item[1].width
-        }, () => {
-          console.log("获取宽度1", this.data.progressAreaWidth, this.data.progressViewWidth)
-        })
-      })
+      // query.select(".movable-area").boundingClientRect()
+      // query.select(".movable-view").boundingClientRect()
+
+      // query.exec(item => {
+      //   console.log("当前item",item)
+      //   this.setData({
+      //     progressAreaWidth: item[0].width,
+      //     progressViewWidth: item[1].width
+      //   }, () => {
+      //     console.log("获取宽度1", this.data.progressAreaWidth, this.data.progressViewWidth)
+      //   })
+      // })
     },
 
     // 音频事件流
